@@ -1,0 +1,26 @@
+.wrapper {
+  background-color: aliceblue;
+}
+
+.navBox {
+  list-style-type: none;
+  display: flex;
+  position: fixed;
+  margin-top: 30px;
+}
+
+.navLink {
+  margin: 20px;
+  float: left;
+  text-decoration: none;
+  color: #ef651b;
+  font-weight: 700;
+}
+
+.navBox {
+  display: flex;
+  float: none;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
