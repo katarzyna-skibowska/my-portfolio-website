@@ -4,7 +4,7 @@ import styles from "./Navigation.module.css";
 const Navigation = () => {
   return (
     <>
-      <nav className={styles.wrapper}>
+      <nav className={styles.wrapperNav}>
         <ul className={styles.navBox}>
           <li>
             <NavLink to="/about-me" className={styles.navLink}>

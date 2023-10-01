@@ -1,3 +1,7 @@
+.wrapperNav {
+  margin-bottom: 10px;
+}
+
 .navBox {
   list-style-type: none;
   display: flex;
