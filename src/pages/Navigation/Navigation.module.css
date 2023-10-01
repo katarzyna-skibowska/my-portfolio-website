@@ -1,26 +1,24 @@
-.wrapper {
-  background-color: aliceblue;
-}
-
 .navBox {
   list-style-type: none;
   display: flex;
   position: fixed;
-  margin-top: 30px;
+  display: flex;
+  float: none;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navLink {
-  margin: 20px;
   float: left;
   text-decoration: none;
   color: #ef651b;
   font-weight: 700;
+  padding: 10px 30px;
+  font-size: 17px;
 }
 
-.navBox {
-  display: flex;
-  float: none;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.navLink:hover {
+  background-color: #343130;
+  border-radius: 3px;
 }
