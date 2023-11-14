@@ -1,0 +1,40 @@
+.box {
+  text-align: center;
+}
+
+.cardsBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.card {
+  align-content: center;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid #ef651b;
+  padding: 0;
+  margin: 10px;
+  height: 350px;
+  width: 250px;
+  position: relative;
+}
+.cardDescription {
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.cardButton {
+  margin-top: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 310px;
+}
+
+.cardImg {
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+}

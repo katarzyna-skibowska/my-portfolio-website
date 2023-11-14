@@ -1,7 +1,8 @@
-.profilephoto {
+.avatar {
   width: 100%;
-  max-width: 300px;
-  max-height: 500px;
+  height: 200%;
+  /* max-width: 300px; */
+  /* max-height: 500px; */
 }
 
 .wrapper {

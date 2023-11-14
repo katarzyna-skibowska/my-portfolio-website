@@ -1,4 +1,4 @@
-import myprofilephoto from "../../assets/myprofilephoto.webp";
+import avatar from "../../assets/avatar.png";
 import styles from "./AboutMe.module.css";
 
 const AboutMe = () => {
@@ -18,8 +18,8 @@ const AboutMe = () => {
       </section>
       <section className={styles.container}>
         <img
-          className={styles.profilephoto}
-          src={myprofilephoto}
+          className={styles.avatar}
+          src={avatar}
           alt="Katarzyna Skibowska photo"
         />
       </section>
