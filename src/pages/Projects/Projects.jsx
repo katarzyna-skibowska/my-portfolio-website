@@ -18,7 +18,7 @@ const Projects = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://github.com/katarzyna-skibowska/fitpal-app-react"
+            href="https://github.com/katarzyna-skibowska/fitpal-react-app"
           >
             <button className={styles.cardButton}>Kod źródłowy</button>
           </a>

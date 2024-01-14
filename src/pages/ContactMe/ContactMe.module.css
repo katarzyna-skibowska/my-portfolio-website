@@ -1,0 +1,61 @@
+.containerBox {
+  background-color: #620e3b;
+  margin: 40px;
+}
+.container {
+  text-align: center;
+  padding: 30px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: #2f323f;
+}
+
+.formLabel {
+  padding-top: 15px;
+}
+
+.inputStyle {
+  width: 250px;
+  height: 25px;
+}
+
+.textareaInput {
+  height: 120px;
+}
+.sendButton {
+  margin: 18.7px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+.smIcon {
+  height: 40px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  .containerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40em;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #2f323f;
+  }
+
+  .inputStyle {
+    width: 250px;
+    height: 30px;
+  }
+}

@@ -3,6 +3,7 @@ import Navigation from "./pages/Navigation/Navigation";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import { Skills } from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
+import ContactMe from "./pages/ContactMe/ContactMe";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <ContactMe />
       <Routes>
-        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/" element={<AboutMe />} />
         {/* <Route path="/actors" element={<ActorsPage />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />  */}
