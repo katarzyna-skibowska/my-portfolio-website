@@ -3,7 +3,7 @@ import CardImg from "../../assets/cardPhoto.png";
 
 const Projects = () => {
   return (
-    <div className={styles.box}>
+    <div id="projects" className={styles.box}>
       <h2>Moje projekty</h2>
       <section className={styles.cardsBox}>
         <div className={styles.card}>

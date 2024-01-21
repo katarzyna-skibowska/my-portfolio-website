@@ -1,0 +1,81 @@
+.navBox {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navMenu {
+  display: flex;
+  list-style-type: none;
+}
+
+.navLink {
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navMenu .active {
+  padding-bottom: 12px;
+  border-bottom: 3px solid #eacd10;
+}
+.navLink:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid #eacd10;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 708px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navMenu {
+    position: fixed;
+    left: -110%;
+    top: 64px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    text-align: center;
+    transition: 0.3s;
+    padding-left: 0;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .navLink {
+    cursor: pointer;
+    margin: 1.5rem 0;
+    line-height: 40px;
+  }
+}

@@ -31,7 +31,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className={styles.containerBox}>
+    <div id="contact" className={styles.containerBox}>
       <div className={styles.container}>
         <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
           <h3>Send me an email</h3>

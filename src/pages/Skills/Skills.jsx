@@ -2,7 +2,7 @@ import styles from "./Skills.module.css";
 
 export const Skills = () => {
   return (
-    <div className={styles.box}>
+    <div id="skills" className={styles.box}>
       <h2>Moje Umiejętności</h2>
       <div className={styles.wrapperContent}>
         <section className={styles.sectionList}>

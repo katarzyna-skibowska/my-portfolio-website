@@ -1,35 +1,82 @@
-import { NavLink } from "react-router-dom";
-import styles from "./Navigation.module.css";
+import { useState } from "react";
+import "./Navigation.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+import { Link } from "react-scroll";
 
 const Navigation = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
+  const closeMenu = () => setClick(false);
+
   return (
-    <>
-      <nav className={styles.wrapperNav}>
-        <ul className={styles.navBox}>
+    <div className="navBox">
+      <nav className="navbar">
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
+        </div>
+        <ul className={click ? "navMenu active" : "navMenu"}>
           <li>
-            <NavLink to="/about-me" className={styles.navLink}>
-              O mnie
-            </NavLink>
+            <Link
+              to="about-me"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLink"
+              onClick={closeMenu}
+            >
+              About me
+            </Link>
           </li>
 
           <li>
-            <NavLink to="/skills" className={styles.navLink}>
-              Umiejętności
-            </NavLink>
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="navLink"
+              onClick={closeMenu}
+            >
+              Skills
+            </Link>
           </li>
           <li>
-            <NavLink to="/projects" className={styles.navLink}>
-              Projekty
-            </NavLink>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="navLink"
+              onClick={closeMenu}
+            >
+              Projects
+            </Link>
           </li>
-          <li className={styles.navItemPosition}>
-            <NavLink to="/contact" className={styles.navLink}>
-              Kontakt
-            </NavLink>
+          <li>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={500}
+              className="navLink"
+              onClick={closeMenu}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
