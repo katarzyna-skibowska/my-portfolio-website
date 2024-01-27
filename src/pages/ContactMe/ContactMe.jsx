@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import styles from "./ContactMe.module.css";
+import "./ContactMe.css";
 import ContactMeModal from "./ContactMeModal";
 import githubLogo from "../../assets/githubLogo.svg";
 import linkedinLogo from "../../assets/linkedinLogo.svg";
@@ -31,34 +31,34 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contact" className={styles.containerBox}>
-      <div className={styles.container}>
-        <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
+    <div id="contact" className="containerBox">
+      <div className="container">
+        <form ref={form} onSubmit={sendEmail} className="contactForm">
           <h3>Send me an email</h3>
-          <label className={styles.formLabel}>Name:</label>
+          <label className="formLabel">Name:</label>
           <input
             type="text"
             name="guest_name"
-            className={`${styles.nameInput} ${styles.inputStyle}`}
+            className="inputStyle"
             required
           />
-          <label className={styles.formLabel}>Email:</label>
+          <label className="formLabel">Email:</label>
           <input
             type="email"
             name="guest_email"
-            className={`${styles.emailInput} ${styles.inputStyle}`}
+            className="inputStyle"
             required
           />
-          <label className={styles.formLabel}>Message:</label>
+          <label className="formLabel">Message:</label>
           <textarea
             name="message"
-            className={`${styles.textareaInput} ${styles.inputStyle}`}
+            className="textareaInput inputStyle"
             required
           />
           <input
             type="submit"
             value="Send email"
-            className={styles.sendButton}
+            className="sendButton"
             onClick={() => {
               sendEmail;
             }}
@@ -66,23 +66,19 @@ const ContactMe = () => {
           <ContactMeModal show={show} setShow={setShow} />
         </form>
       </div>
-      <div className={styles.container}>
+      <div className="container">
         <section>
           {/* <h3>Get in touch</h3> */}
           <p>Feel free to connect with me!</p>
           <p>email: kat.skibowska@gmail.com</p>
           <a target="blank" href="https://github.com/katarzyna-skibowska">
-            <img className={styles.smIcon} src={githubLogo} alt="github logo" />
+            <img className="smIcon" src={githubLogo} alt="github logo" />
           </a>
           <a
             target="blank"
             href="https://www.linkedin.com/in/katarzyna-skibowska/"
           >
-            <img
-              className={styles.smIcon}
-              src={linkedinLogo}
-              alt="linkedin logo"
-            />
+            <img className="smIcon" src={linkedinLogo} alt="linkedin logo" />
           </a>
         </section>
       </div>

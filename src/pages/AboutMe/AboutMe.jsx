@@ -1,26 +1,26 @@
-import avatar from "../../assets/avatar.png";
-import styles from "./AboutMe.module.css";
+import sideimage from "../../assets/sideimage.png";
+import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div id="about-me" className={styles.wrapper}>
-      <section className={styles.container}>
+    <div id="about-me" className="wrapper">
+      <section className="container">
         <h1>Katarzyna Skibowska</h1>
         <h3>Junior Frontend Developer</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugiat
-          a provident vero tenetur. Consequatur nobis dolore voluptatum vero
-          maxime repellendus iste aperiam. Minima vitae ducimus similique.
-          Dignissimos officia adipisci quasi minima vero reiciendis quo aperiam
-          modi sapiente, ab quisquam in, laborum perferendis quibusdam
-          laboriosam aliquam voluptatem sequi molestiae fugiat.
+          Hi! I am Katarzyna and I am Junior Fronted Developer specialized in
+          Javascript and React. My journey with frontend technologies started in
+          2022 when enrolled to 8 months Frontend Developer course. I became
+          familiar with HTML, CSS, JavaScript, React, unnit and E2E testing as
+          well as TypeScript and Git. I am still developing my skills!
         </p>
       </section>
-      <section className={styles.container}>
+      <section className="container">
         <img
-          className={styles.avatar}
-          src={avatar}
-          alt="Katarzyna Skibowska photo"
+          className="sideimage"
+          src={sideimage}
+          alt="freepik-photo-blond-woman-using-laptop"
+          loading="lazy"
         />
       </section>
     </div>

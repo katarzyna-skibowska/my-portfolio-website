@@ -15,18 +15,10 @@
 }
 
 body {
-  color: #ffffff;
+  color: #020202;
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #5f5d5d;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+  background-color: #efefed;
 }

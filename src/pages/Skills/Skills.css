@@ -1,0 +1,61 @@
+.title {
+  text-shadow: 2px 2px #eacd10;
+  position: relative;
+  font-size: 28px;
+  overflow: hidden;
+}
+.title:before,
+.title:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 1px;
+  content: "\a0";
+  background-color: #000000;
+  margin-left: 2%;
+}
+
+.title:before {
+  margin-left: -50%;
+}
+.subtitle {
+  margin: 23px;
+}
+
+.wrapperContent {
+  width: 100%;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  justify-content: center;
+  display: grid;
+  padding-left: 0;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 140px);
+}
+.bottom {
+  grid-template-columns: repeat(4, 140px);
+}
+
+.skills-icon {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.name {
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+    list-style-type: none;
+    justify-content: center;
+    display: grid;
+    padding-left: 0;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 120px);
+  }
+}

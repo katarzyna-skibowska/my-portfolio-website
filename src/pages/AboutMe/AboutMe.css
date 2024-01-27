@@ -1,7 +1,7 @@
-.avatar {
+.sideimage {
   width: 100%;
   height: 200%;
-  /* max-width: 300px; */
+  max-width: 40rem;
   /* max-height: 500px; */
 }
 

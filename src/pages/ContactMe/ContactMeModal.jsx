@@ -1,17 +1,17 @@
-import styles from "./ContactMeModal.module.css";
+import "./ContactMeModal.css";
 import close from "../../assets/close.png";
 
 const ContactMeModal = ({ show, setShow }) => {
   const content = show && (
-    <div className={styles.modal}>
+    <div className="modal">
       <button
-        className={styles.modalButton}
+        className="modalButton"
         type="button"
         onClick={() => setShow(false)}
       >
-        <img src={close} alt="cancel button" className={styles.closeIcon} />
+        <img src={close} alt="cancel button" className="closeIcon" />
       </button>
-      <h3 className={styles.modalContent}>Twoja wiadomość została wysłana!</h3>
+      <h3 className="modalContent">Twoja wiadomość została wysłana!</h3>
     </div>
   );
 
