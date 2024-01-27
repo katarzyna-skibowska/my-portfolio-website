@@ -16,7 +16,7 @@ import tests from "../../assets/tests.png";
 const Skills = () => {
   return (
     <div id="skills" className="box">
-      <h2 className="title">My skills</h2>
+      <h2>My skills</h2>
       <div className="wrapperContent">
         <section>
           <ul className="list">

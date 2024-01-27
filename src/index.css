@@ -22,3 +22,25 @@ body {
   min-height: 100vh;
   background-color: #efefed;
 }
+
+h2 {
+  text-shadow: 2px 2px #eacd10;
+  position: relative;
+  font-size: 28px;
+  overflow: hidden;
+}
+h2:before,
+h2:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 1px;
+  content: "\a0";
+  background-color: #000000;
+  margin-left: 2%;
+}
+
+h2:before {
+  margin-left: -50%;
+}

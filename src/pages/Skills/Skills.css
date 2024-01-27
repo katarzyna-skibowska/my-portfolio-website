@@ -1,24 +1,3 @@
-.title {
-  text-shadow: 2px 2px #eacd10;
-  position: relative;
-  font-size: 28px;
-  overflow: hidden;
-}
-.title:before,
-.title:after {
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 48%;
-  height: 1px;
-  content: "\a0";
-  background-color: #000000;
-  margin-left: 2%;
-}
-
-.title:before {
-  margin-left: -50%;
-}
 .subtitle {
   margin: 23px;
 }
