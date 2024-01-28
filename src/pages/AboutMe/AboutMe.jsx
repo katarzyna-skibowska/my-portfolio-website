@@ -1,4 +1,6 @@
-import sideimage from "../../assets/sideimage.png";
+// import sideimage from "../../assets/sideimage.png";
+import sideimage from "../../assets/photo.png";
+
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -19,7 +21,7 @@ const AboutMe = () => {
         <img
           className="sideimage"
           src={sideimage}
-          alt="freepik-photo-blond-woman-using-laptop"
+          alt="Image by catalyststuff on Freepik. woman-working-laptop-with-fire-cartoon-vector-icon-illustration-people-technology."
           loading="lazy"
         />
       </section>
