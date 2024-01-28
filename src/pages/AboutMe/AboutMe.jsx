@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div id="about-me" className="wrapper">
       <section className="container">
-        <h1>Katarzyna Skibowska</h1>
+        <h1 className="header">Katarzyna Skibowska</h1>
         <h3>Junior Frontend Developer</h3>
         <p>
           Hi! I am Katarzyna and I am Junior Fronted Developer specialized in
