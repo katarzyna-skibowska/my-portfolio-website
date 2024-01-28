@@ -1,10 +1,19 @@
-.containerBox {
-  background-color: #620e3b;
-  margin: 40px;
+#contact {
+  justify-content: center;
 }
+
+.containerBox {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 40px;
+  display: block;
+  box-sizing: content-box;
+}
+
 .container {
   text-align: center;
   padding: 30px;
+  max-width: 450px;
 }
 
 .contactForm {
@@ -12,6 +21,8 @@
   flex-direction: column;
   align-items: center;
   padding: 5px;
+  border-radius: 5px;
+  border: solid 2px #eacd10;
   background-color: #2f323f;
 }
 
@@ -20,7 +31,7 @@
 }
 
 .inputStyle {
-  width: 250px;
+  max-width: 250px;
   height: 25px;
 }
 
@@ -28,11 +39,16 @@
   height: 120px;
 }
 .sendButton {
-  margin: 18.7px;
+  margin: 18px;
   height: 30px;
   width: 100px;
   cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  background-color: #eacd10;
+  border-radius: 5px;
 }
+
 .smIcon {
   height: 40px;
   padding: 10px;
@@ -42,16 +58,12 @@
   .containerBox {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     height: 40em;
+    justify-content: space-around;
   }
 
   .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 30px;
-    background-color: #2f323f;
   }
 
   .inputStyle {

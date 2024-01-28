@@ -34,7 +34,6 @@
 }
 
 .cardButton {
-  /* border: 2px solid #eacd10; */
   color: #000000;
   font-weight: 700;
   background-color: #eacd10;
@@ -46,9 +45,7 @@
   right: 30%;
   top: 290px;
 }
-/* .cardButton:hover {
-  background-color: #eacd10;
-} */
+
 .cardImg {
   box-sizing: border-box;
   max-height: 100%;

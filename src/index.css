@@ -2,25 +2,13 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  color: #020202;
-  margin: 0;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #efefed;
+  background-color: #f1f0f0;
 }
 
 h2 {
@@ -28,6 +16,7 @@ h2 {
   position: relative;
   font-size: 28px;
   overflow: hidden;
+  text-align: center;
 }
 h2:before,
 h2:after {
